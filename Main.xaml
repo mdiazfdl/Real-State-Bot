@@ -1,0 +1,260 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="850.4,598.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.CSV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Real Estate" sap:VirtualizedContainerService.HintSize="592,2140.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="vStrDT" />
+      <Variable x:TypeArguments="x:Int32" Name="VIntValue">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="450000000" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Navegacion" sap:VirtualizedContainerService.HintSize="529.6,2052" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="8ba2c3b9-1681-45be-881a-0c4617002481" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1772" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ordenar por'" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8ba2c3b9-1681-45be-881a-0c4617002481" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/apartamento/venta/bogota/chapinero/?search=form" CVScreenId="0fbeb835-02ba-42ca-a3b0-2d21ed092a86" CvElementArea="1439, 408, 208, 59" CvType="InputBox" DesignTimeRectangle="1462, 427, 100, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Ordenar por' parentid='__next' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Ordenar por' parentid='__next' tag='DIV' type='' class='m2-select__placeholder css-1wa3eu0-placeholder' check:innerText='Ordenar por' /&gt;" Guid="10c404fe-c5c9-46e3-8c42-e5fe677898ca" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAYCAYAAAAWPrhgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAXcSURBVGhD7Vn9a9tGGN6fboIIIogiijEmiBKDNaqwlLnEAYcE6pQ4xF0c6izu7C3OGlMb8mFDvNaknfPsvQ/Jp5PkuA2D/KAHBPXp1XN373Pvx6U/IcWTRirQE0cq0BNHKtATRyrQE0cq0BNHvEDTEVrbBdimgUwmwx/jeQGVD2Np8Dh0XpnI2GUM5O8UyYgKdNdFySZRzCy87SbOrofo/7GPUp6JZcA9nkjDH0d9jfjX6ri/v5cjKZKgCTRBo0hC2CV078AdOHPiFSpZcmxuF8NHObaHMh0Ae7OXCrQAwgLd7CLLouS9EEfHYMumKCrg8FGObcIzMsi/naQCLYCwQMcuCZBH9R81cmbgAhkemsE7EQ3W6xZamw7MJVavDHgn8vX0CvX1LCwShNeyFQe75zU49G+3oc1xN0CtaMPgHPQYFpzNFkJVr1eGnTHhHTWwkaM6Juuj6ZTRiimPo9MyHEvW0SUTzk4P3dcWr389aSM4LZROWyg7kpPtUb4Oo44CvS8cdLG3NlurmdtAYyRNFHz7VIOXswI7w3JQjtTx+T4MCTTayWoChOEX94vgfQMuI6THKlbRGYyoXp3h8l/2XkycWbLgVjvoX5/h6Ne8XKyN8oUi0LgO16QN5EuotQcY+ra0qezOpbBh4AeIvifx3Ddt4uyj/caFxTidfUrQM4zfFfj3VrGCZpfV0Spcy4Jlke0Lpf75nGydxDm4GaD912V8dHMxma0Be32f7/fstxLyyzSmik6YnHh8XXz+8xGG3SNRx5do76rhXB9qAkUFCCNS3D/vIU8LNl42+Zi6qcm+w4UofVRr2QR7q8SRcXAoF8DQfEkLp9p2qXE0f2b1sIy+HJu8zdO3Fn7pCDvflq9bTb3TJlyKWutVJ2SHqwqlcDrxr9rBmOCkE9sMc8aCnM5Fl98Htu9dGqco/Hs2v0eiRfwybcFbEfMHmONDhpBA87srERGm3LQYkumBFhb+Rgrh1PBF4+qxFBOK0uSa1NuklKocGP77WYn/Vm35+JKLI3+MO1KLUg6RouytfjCexBmLQ3bosti91mxlZBXq6vxZVC6jnMLHh7PxRB8KKAL5uTCpuxKhmN0Zzd5TGtGjQUA43d4aRLh4tKhRyhsTFlUJz+peIDLfnPLbBxdd4UxsZuRpZY7018U51ZQ3B1zMlQ20dVvu5FkURmu1jxF2czRfsbGADwUUgYRTQwKokJtTi3viQmIc4aP+ghaoRumfGzDptJWpTgzpzhV5br9K2wE/QH4qUKFHfuQQ+PhYghWKrGTOOPB54q4ZfsT2BW/i/Ohgg1KcenCTxRRQBBLhn9/7Er9YrnQ4vBNrlhLyYS5xCEJRynkXad3l5iL3J+FkNfVyR1J6/apxinojulSBJM44yNMfE208shQnJ0alvMb4kcbwUN1XBJILWK3iVjeWf10wKDTV9KKf3ADTOm+l7c2L0LsxdxCL0uFsnItJrXNL46DOzlsro/NZ/vZb3ATR1VPZKNK6VjychtLGldifWqsSOePQQ+lZDC+t06H5jfVWwMGdHpmfjVMqXiYhady3TfShRKhJmFDLyboUc1W0u6ObLprbHrLUAjOVe1P1AjuvZk1oYgrzoHUlni2/x9cdItvx5TxKBx3e5nYOROtq0MKDW4MU0u/gAsjDEOKU3RZr2xvU4g7aNWpxWYutpZ4HCnQYQky1He6eVKh1Z2unDHCrcDBesvPnH503USmSOHQXc9+NI3tPrvuaQAzjDxUUntNG2GLYJk0bhe0WhorqAn7ToESDimkvepk7LZFDYrqrMbskKhc6mtOtdnkkB3b8viJSbAjcyVHOq0MXNp1svo9lG97xSJ5WpYNK4ozDQIr5O0WsLf3D7kNrFZyq4khwPyp2Vs5D7dM3bjezfcCHhIhAPnwi9YlD0rgKnWMel26r40fGdT7dNunbEGQz49dg/UnCInbzvk8UKIUGfgd67N8hvx+pQAuCd2pzuq3/C6lAC4J3ho/+r5bvBfAf/N/NC6vCde0AAAAASUVORK5CYII=" InformativeScreenshot="1c17277cdbe39f01a65e55211f63f55a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Apartamentos en Venta en Chapinero, Bogotá D.C. - Vivienda Nueva y Usada' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Menor precio'" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8ba2c3b9-1681-45be-881a-0c4617002481" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/apartamento/venta/bogota/chapinero/?search=form" CVScreenId="48951edd-80fe-4d96-9b4c-47705dafc31d" CvTextArea="1459, 533, 114, 21" CvTextArgument="Menor precio" CvType="Text" DesignTimeRectangle="1442, 515, 211, 52" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Menor precio' parentid='__next' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Menor precio' parentid='__next' tag='DIV' type='' class='m2-select__option m2-select__option--is-focused css-1n7v3ny-option' check:innerText='Menor precio' /&gt;" Guid="8bab2c1c-9d9f-4953-9fb9-224b673b236c" InformativeScreenshot="4705e4392202c3049cee1868917b31db.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Apartamentos en Venta en Chapinero, Bogotá D.C. - Vivienda Nueva y Usada' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8ba2c3b9-1681-45be-881a-0c4617002481" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/apartamento/venta/bogota/chapinero/?search=form" CVScreenId="f99dce13-fde8-4d94-955e-c367486f0d3d" CvElementArea="298, 643, 55, 55" CvTextArea="319, 662, 12, 17" CvTextArgument="2" CvType="Button" DesignTimeRectangle="301, 646, 50, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='2' class='custom-control-description' parentid='__next' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='2' class='custom-control-description' parentid='__next' tag='SPAN' type='' check:innerText='2' /&gt;" Guid="a152de4f-dc88-4302-b3f2-3958fa579c28" InformativeScreenshot="2f64c0d84f8d5ad44754001a4e9ef317.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Apartamentos en Venta en Chapinero, Bogotá D.C. - Vivienda Nueva y Usada' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="f99dce13-fde8-4d94-955e-c367486f0d3d" CvTextArea="239, 622, 100, 15" CvTextArgument="Habitaciones:" CvType="Text" DesignTimeRectangle="241, 621, 99, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Habitaciones:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Habitaciones:' tag='LABEL' type='' class='sc-jAaTju bPqVtc' check:innerText='Habitaciones:' /&gt;" Guid="6e8656ac-5209-4fe7-a44a-d6c41bd76e89" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" DisplayName="Type Into 'Precio hasta (COP)'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="8ba2c3b9-1681-45be-881a-0c4617002481" Text="[VIntValue.ToString()]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/apartamento/venta/bogota/chapinero/?search=form" CVScreenId="811453b9-3ab7-439c-9dc0-99012227becb" CvElementArea="239, 462, 292, 58" CvType="InputBox" DesignTimeRectangle="241, 464, 290, 55" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='endPrice' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='endPrice' tag='INPUT' type='text' class='sc-cvbbAY eNavcQ form-control' placeholder='Hasta' aaname='' /&gt;" Guid="809628aa-fbce-4a11-8ea1-f12020efda61" InformativeScreenshot="5820463808640b177bff236f0f84f88e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Apartamentos en Venta en Chapinero, Bogotá D.C. - Vivienda Nueva y Usada' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="811453b9-3ab7-439c-9dc0-99012227becb" CvTextArea="239, 440, 137, 16" CvTextArgument="Precio hasta (COP):" CvType="Text" DesignTimeRectangle="241, 439, 136, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Precio hasta (COP):' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Precio hasta (COP):' tag='LABEL' type='' class='sc-jAaTju bPqVtc' check:innerText='Precio hasta (COP):' /&gt;" Guid="7fb71e0b-a052-4349-9edf-686db8b7791f" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Filtrar precios'" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8ba2c3b9-1681-45be-881a-0c4617002481" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/apartamento/venta/bogota/chapinero/?search=form" DesignTimeRectangle="241, 538, 290, 39" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='filter-price' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='filter-price' tag='INPUT' type='submit' class='sc-cvbbAY jxdLEY sc-htoDjs brhAsq Button-bepvgg-0 dqiWxy btn-sm btn btn-sm btn-block btn-secondary form-control-button' aaname='Filtrar precios' check:text='Filtrar precios' /&gt;" Guid="3353c32d-1af6-4101-a806-26a4aaf09443" ImageBase64="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" InformativeScreenshot="0b41a8a663d1ca520405335639ab71b5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Apartamentos en Venta en Chapinero, Bogotá D.C. - Vivienda Nueva y Usada' /&gt;" SearchSteps="FuzzySelector, Image" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Nombre'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='URL'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Precio'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Area'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='Habitaciones'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column5' Name='Baños'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='1' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='2' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='fulltext'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='3' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column5' attr='fulltext'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='4' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="8ba2c3b9-1681-45be-881a-0c4617002481" Version="V3">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/apartamento/venta/bogota/chapinero/?search=form" CVScreenId="fe61ffa5-ea51-4af5-b2b6-777dc07fcad5" CvElementArea="1176, 691, 37, 29" CvType="Icon" DesignTimeRectangle="1182, 699, 27, 17" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;span&amp;gt;svg' idx='3' parentid='__next' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='Icon-sc-1mikm6x-0 jvsOeO' parentid='__next' tag='svg' aaname='' /&gt;" Guid="a4769b13-17e4-427e-96cc-3af2b1fef51e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB8AAAAVCAYAAAC+NTVfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEZSURBVEhL3ZK/SsNwFEZ9CXFyFVyko+ALSMEHKAhugoub4FJxKjhqO/gHhSIORhxqCy1YGlAUBW1dJCIWKShECE5aBKunKbkQQxtcvCl44EK+bznk/u4AfeSfyVsfkEvAQ0GKcHT+vGHC6iA8nUnRG7213x3Cxgg4lhTd6L75zRZkx+H9RYog+gd3sQJGHL4+pfDRl3cwF+FoWoJPNPIOxVk4npfg4cuvM3CV1p2dGJwui/Cn/GTJnaTubI9BaU6EUa69sgD5GQke0cjPU3Aw5X58e1nQl9fWYXcCmo4UPrpyy4DNUXi9lyKInvyxDGtD8HwpRTc6crsKmWGoF6Xozd/L32zYn4TbPSnCUVp78KrD0D24X+ijHNpwSeLeXN1yEAAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Apartamentos en Venta en Chapinero, Bogotá D.C. - Vivienda Nueva y Usada' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="fe61ffa5-ea51-4af5-b2b6-777dc07fcad5" CvElementArea="1233, 691, 28, 32" CvType="ArrowButton" DesignTimeRectangle="1230, 685, 39, 41" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-label='Next' idx='2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Next' type='' tag='A' class='sc-bdVaJa ebNrSm page-link' aaname='Next' check:innerText='Next' /&gt;" Guid="032e5d80-6be3-448e-be9d-766bbb0a7900" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/apartamento/venta/bogota/chapinero/?search=form" DesignTimeRectangle="14, -361, 1841, 11286" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div' parentid='__next' tag='DIV' /&gt;" Guid="22e95bf9-506a-401e-8370-8692e29a2f6d" InformativeScreenshot="74e257e50de2e1f085cf9e060cecef42.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Apartamentos en Venta en Chapinero, Bogotá D.C. - Vivienda Nueva y Usada' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:OutputDataTable DataTable="[ExtractDataTable]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="433.6,112.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[vStrDT]" />
+            <ui:AppendWriteCsvFile PathResource="{x:Null}" AddHeaders="True" CsvAction="Write" DataTable="[ExtractDataTable]" Delimitator="Semicolon" DelimitatorForViewModel="Semicolon" DisplayName="Write CSV" FilePath="Real.csv" sap:VirtualizedContainerService.HintSize="433.6,228.8" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_1" ShouldQuote="True" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Edge" IconBase64="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" InformativeScreenshot="88ad3babd44a30c7279543ba3c3493e6.jpg" Selector="&lt;html app='msedge.exe' title='Apartamentos en Venta en Chapinero, Bogotá D.C. - Vivienda Nueva y Usada' /&gt;" Title="Apartamentos, Casas y Otros Inmuebles en Venta o Arriendo en Colombia – Metrocuadrado" Url="https://www.metrocuadrado.com/apartamento/venta/bogota/chapinero/?search=form" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
